@@ -20,14 +20,20 @@
 }
 
 body {
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #a4c2d1;
 }
 
 h2, h3 {
-    font-family: "DM Serif Display", serif;
+    font-family: "poppins", serif;
     color: #184f63;
 }
+
+.sharp-corners, 
+.sharp-corners * {
+    border-radius: 0;
+}
+
 
 #about {
     background-color: white;
@@ -37,6 +43,31 @@ h2, h3 {
     background-color: #dbdcde;
 }
 
+#portfolio .card-title {
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
 #contact {
     background-color: white;
+}
+
+#portfolio .btn-primary:hover {
+    background-color: #1f7798
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/* Media query using bootstrap xl breakpoint */
+
+@media screen and (min-width: 1200px)
+
+{
+
+#portfolio .card-text { 
+    min-height: auto;
+    
+}
 }
